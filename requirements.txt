@@ -43,3 +43,4 @@ traitlets==5.14.3
 tzdata==2024.1
 wcwidth==0.2.13
 imblearn
+streamlit
