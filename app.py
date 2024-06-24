@@ -3,6 +3,8 @@ import streamlit as st
 import seaborn as sns 
 import matplotlib.pyplot as plt 
 import pickle as pkl 
+import numpy as np
+
 
 # Loading the trained model
 with open('model.pkl', 'rb') as f :
@@ -51,12 +53,18 @@ def CUSTOMER_CHURN_PREDICTION():
 
     tenure = st.slider('**Enter the Customer Tenure(months)**', max_value=200, min_value=0, value=100)
     tenure_input = st.number_input('Tenure', max_value=200, min_value=0, value=tenure)
+    if tenure != tenure_input:
+        tenure = tenure_input
     
     monthlycharges = st.slider('**Enter the Customer Monthly charges**', max_value=10000.00, min_value=0.00, value=100.00)
     monthlycharges_input = st.number_input('Customer Monthly Charges', max_value=10000.00, min_value=0.00, value=monthlycharges)
+    if monthlycharges != monthlycharges_input:
+        monthlycharges = monthlycharges_input
     
     Totalcharges = st.slider('**Enter the Customer Total Charges**', max_value=10000.00, min_value=0.00, value=100.00)
     Totalcharges_input = st.number_input('Customer Total Charges', max_value=10000.00, min_value=0.00, value=Totalcharges)
+    if Totalcharges != Totalcharges_input:
+        Totalcharges = Totalcharges_input
 
     InternetService_Fiber_optic = st.radio('**Select if the Customer uses Internet Service(Fiber Optic)**', ['YES', 'NO'])
     if InternetService_Fiber_optic == 'YES':
@@ -81,6 +89,14 @@ def CUSTOMER_CHURN_PREDICTION():
         PaymentMethod_Electronic_check = False
     else:
         st.warning('**PLEASE SELECT AN OPTION(YES/NO)**', icon="⚠️")
+
+    if st.button("**SUBMIT**"):
+        input_data = np.array([[tenure_input, monthlycharges_input, Totalcharges_input, InternetService_Fiber_optic, Contract_Two_year, PaymentMethod_Electronic_check]])
+        response = model.predict(input_data)
+        if response[0] == 1:
+            st.write("The Customer is likely to **CHURN**")
+        elif response[0] == 0:
+            st.write("The Customer is likely to **NOT CHURN**")
 
 # customer churn data insights page
 def CUSTOMER_CHURN_DATA_INSIGTHS():
