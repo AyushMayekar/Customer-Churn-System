@@ -65,7 +65,7 @@ Watch our project in action on YouTube:
 
 ## Contact
 
-For further information about the Customer Churn System, please reach out to the project creator via [LinkedIn](linkedin.com/in/swapneel-mauru-062070285).
+For further information about the Customer Churn System, please reach out to the project creator via [LinkedIn](https://www.linkedin.com/in/swapneel-mauru-062070285)
 
 Thank you for your interest and valuable time. 🤝🌍
 
