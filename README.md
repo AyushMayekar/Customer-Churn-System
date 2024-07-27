@@ -50,13 +50,13 @@ Welcome to the Customer Churn System repository! This project aims to empower te
 ## Screenshots
 
 1. Web App Interface Example:
-   ![Screenshot 1](https://github.com/AyushMayekar/Customer-Churn-System/blob/main/Screenshot 2024-07-27 114033.png)
+   ![1](https://github.com/AyushMayekar/Customer-Churn-System/blob/main/Screenshot%202024-07-27%20114033.png)
 
 2. Web App Interface Example:
-   ![Screenshot 2](https://github.com/AyushMayekar/Customer-Churn-System/blob/main/Screenshot 2024-07-27 114110.png)
+   ![2](https://github.com/AyushMayekar/Customer-Churn-System/blob/main/Screenshot%202024-07-27%20114110.png)
 
 3. Web App Interface Example:
-   ![Screenshot 3](https://github.com/AyushMayekar/Customer-Churn-System/blob/main/Screenshot 2024-07-27 114124.png)   
+   ![3](https://github.com/AyushMayekar/Customer-Churn-System/blob/main/Screenshot%202024-07-27%20114124.png)  
 
 ## Demonstration
 
