@@ -103,7 +103,7 @@ def CUSTOMER_CHURN_PREDICTION():
 def CUSTOMER_CHURN_DATA_INSIGTHS():
     st.title("CUSTOMER CHURN DATA INSIGTHS")
     st.write("**The following are the insights of the data:**")
-    st.image(r"C:\Users\ayush\Desktop\vs\Customer_churn\pairplot.jpg", caption="PAIRPLOT", use_column_width=True)
+    st.image("pairplot.jpg", caption="PAIRPLOT", use_column_width=True)
     st.write("""
             **Understanding the Pairplot**
 A pairplot is a collection of scatter plots arranged in a grid format. Each scatter plot in the grid shows the relationship between a pair of features. Additionally, it can show the distribution of a single feature along the diagonal.
@@ -133,7 +133,7 @@ Cluster Patterns:
 Look for clusters of points. For example, a cluster of senior citizens with high monthly charges who also churn might suggest that high charges are a pain point for older customers.
             """)
 
-    st.image(r"C:\Users\ayush\Desktop\vs\Customer_churn\barplot.jpg", caption="BARPLOT", use_column_width=True)
+    st.image("barplot.jpg", caption="BARPLOT", use_column_width=True)
     st.write("""
 
 **Understanding the Barplot**
